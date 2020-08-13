@@ -80,6 +80,11 @@ while True:
 
 
 #if proper number is entered then we will calculate Ecludeian and Manhattan Distance    
-print("Ecludeian distance ",userList," and ", userList1," is:" ,ecludeian_distance(userList,userList1))
+val=input("Enter 1 to calculate Ecludeian Disntance and 2 for Manhattan Distance")
 
-print("Manhattan distance ",userList," and ", userList1," is:" ,manhattan_distance(userList,userList1))
+if val == "1":
+    print("Ecludeian distance ",userList," and ", userList1," is:" ,ecludeian_distance(userList,userList1))
+elif val == "2":
+    print("Manhattan distance ",userList," and ", userList1," is:" ,manhattan_distance(userList,userList1))
+else:
+    print("Sorry Bud. You did not enter proper choice and lost your chance to get calculated Value")
